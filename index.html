@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- this is my starter code for the quiz -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,12 +9,15 @@
 </head>
 
 <body>
+    <!-- the header will display a link to view the Highscores and a timer. -->
     <header>
-        <h3>View High Scores</h3>
-            <p>Time: <label for="" id="timer">0</label></p>
+        <a href="#highscore">View High Scores</a>
+        <p>Time: <label for="" id="timer">0</label></p>
     </header>
 
+    <!-- Main will hold each quiz page -->
     <main>
+        <!-- Welcome page with instructions -->
         <section id="welcome">
             <h1>Coding Quiz Challenge</h1>
 
@@ -23,9 +27,9 @@
             </button>
         </section>
 
+        <!-- This page is question 1 -->
         <section id="questions">
             <h2 class="title">Question 1</h2>
-
             <ul>
                 <li><button class="choice">Answer 1</button></li>
                 <li><button class="choice">Answer 2</button></li>
@@ -33,7 +37,8 @@
                 <li><button class="choice">Answer 4</button></li>
             </ul>
         </section>
-
+        
+        <!-- This page is question 2 -->
         <section id="questions">
             <h2 class="title">Question 2</h2>
 
@@ -45,6 +50,7 @@
             </ul>
         </section>
 
+        <!-- This page is question 3 -->
         <section id="questions">
             <h2 class="title">Question 3</h2>
 
@@ -56,6 +62,7 @@
             </ul>
         </section>
 
+        <!-- This page is question 4 -->
         <section id="questions">
             <h2 class="title">Question 4</h2>
 
@@ -67,6 +74,7 @@
             </ul>
         </section>
 
+        <!-- This page is question 5 -->
         <section id="questions">
             <h2 class="title">Question 5</h2>
 
@@ -78,6 +86,7 @@
             </ul>
         </section>
 
+        <!-- This page will save the user's quiz score -->
         <section id="initials">
             <h2 class="title">Quiz Completed!</h2>
             <p>Your score is <label for="" id="score"></label>00</p>
@@ -86,10 +95,12 @@
             <button id="submit">Submit</button>
         </section>
 
+        <!-- This page will list all user high scores -->
         <section id="highscore">
             <h2 class="title">View High Scores</h2>
             <ol>
-                <li></li>
+               <!-- DYNAMIC -->
+                <li></li> 
             </ol>
 
             <ul>
@@ -100,6 +111,7 @@
         </section>
     </main>
 
+    <!-- JS is linked here -->
     <script src="./Assets/JS/script.js"></script>
 </body>
 

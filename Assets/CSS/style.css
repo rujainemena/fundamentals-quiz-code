@@ -1,27 +1,29 @@
-header{
+header {
     display: flex;
     flex-wrap: wrap;
 }
 
-header h3{
+header a {
     width: 50%;
 }
 
-header p{
+header p {
     width: 50%;
     display: flex;
     justify-content: end;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-#welcome, #questions, #initials, #highscore{
+#welcome,
+#questions,
+#initials,
+#highscore {
     text-align: center;
 }
 
-#questions ul{
+#questions ul {
     list-style: none;
-    text-justify: auto;
 }
