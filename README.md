@@ -1,1 +1,1 @@
-# fundamentals-quiz-code
+# 04 Fundamentals of JS Quiz
