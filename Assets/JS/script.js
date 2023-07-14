@@ -4,11 +4,14 @@ var timerEl = document.querySelector("#timer");
 var questionsEl = document.querySelector("#questions");
 var choicesEl = document.querySelectorAll(".choices");
 var titleEL = document.querySelector("#title");
+var answerEl = document.querySelector("#answer");
 // var initialEl = document.querySelector("#initials");
-// var highScore = document.querySelector("#highscore");
-// var score = document.querySelector("#score")
+var highScoreEl = document.querySelector("#highscore");
+// var scoreEl = document.querySelector("#score")
+var headerEl = document.querySelector("a")
 // var backBtn = document.querySelector("#back-btn");
 // var clearBtn = document.querySelector("#clear-btn");
+
 
 
 // data structure to store questions and choices
@@ -68,20 +71,46 @@ function showQuest() {
     choicesEl[1].textContent = questionGroup[questionIndex].choices[1];
     choicesEl[2].textContent = questionGroup[questionIndex].choices[2];
     choicesEl[3].textContent = questionGroup[questionIndex].choices[3];
+
+    answerEl.textContent = "";
 }
 
 // Function to proceed to the following question after answer is selected.
-function nextQuestion(event){
+function nextQuestion(event) {
     var currentElement = event.target;
+
     if (currentElement.matches("button")) {
+        if (currentElement.textContent === questionGroup[questionIndex].answer) {
+            answerEl.textContent = "Correct!";
+        } else {
+            answerEl.textContent = "Wrong!";
+            timeLeft = timeLeft - 10; //if wrong answer is selected, deduct 10 seconds
+        }
         questionIndex++
-        showQuest();
     }
+    // this statement will delay the call to the next question
+    if (currentElement.matches("button")) {
+        if (questionIndex < questionGroup.length) {
+            setTimeout(showQuest, 500);
+        }
+        //this statement will hide the questions and display the score page.
+        else {
+            questionsEl.classList.add("hide");
+            highScoreEl.removeAttribute("class");
+            clearInterval(setIntervalId);
+            scoreEl.textContent = timerEl.textContent;
+        }
+    }
+}
 
-
+function viewHighScore() {
+    welcomeEl.classList.add("hide")
+    questionsEl.classList.add("hide");
+    highScoreEl.removeAttribute("class");
 }
 
 
 // User actions
 startBtn.addEventListener("click", startQuiz);
 questionsEl.addEventListener("click", nextQuestion);
+headerEl.addEventListener("click", viewHighScore);

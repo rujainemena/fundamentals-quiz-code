@@ -27,3 +27,12 @@ header p {
 #questions ul {
     list-style: none;
 }
+
+#title {
+    display: inline-block;
+    text-align: left;
+}
+
+#message {
+    font-style: italic;
+}
