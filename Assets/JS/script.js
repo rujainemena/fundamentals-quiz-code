@@ -15,29 +15,29 @@ var titleEL = document.querySelector("#title");
 var questionIndex = 0;
 var questionGroup = [
     {
-        title: "Q1",
-        choices: ["c1", "c2", "c3", "c4"],
-        answer: "c2"
+        title: "Commonly used data types DO NOT include:",
+        choices: ["a. string", "b. alerts", "c. boolean", "d. numbers"],
+        answer: "b. alerts"
     },
     {
-        title: "Q2",
-        choices: ["c1", "c2", "c3", "c4"],
-        answer: "c3"
+        title: "The condition in an if / else statement is enclosed in _____.",
+        choices: ["a. quotes", "b. curly brackets", "c. parenthesis", "d. square brackets"],
+        answer: "c. parenthesis"
     },
     {
-        title: "Q3",
-        choices: ["c1", "c2", "c3", "c4"],
-        answer: "c4",
+        title: "Arrays in JavaScript can be used to store _____.",
+        choices: ["a. numbers and strings", "b. booleans", "c. other arrays", "d. all of the above"],
+        answer: "d. all of the above",
     },
     {
-        title: "Q4",
-        choices: ["c1", "c2", "c3", "c4"],
-        answer: "c1"
+        title: "String values must be enclosed within _____ when being assigned to variables.",
+        choices: ["a. quotes", "b. commas", "c. curly brackets", "d. parenthesis"],
+        answer: "a. quotes"
     },
     {
-        title: "Q5",
-        choices: ["c1", "c2", "c3", "c4"],
-        answer: "c3"
+        title: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        choices: ["a. JavaScript", "b. terminal/bash", "c. console.log", "d. for loops"],
+        answer: "c. console.log"
     }
 ];
 
@@ -78,7 +78,7 @@ function nextQuestion(event){
         showQuest();
     }
 
-    
+
 }
 
 
