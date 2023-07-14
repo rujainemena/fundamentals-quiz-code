@@ -5,10 +5,10 @@ var questionsEl = document.querySelector("#questions");
 var choicesEl = document.querySelectorAll(".choices");
 var titleEL = document.querySelector("#title");
 var answerEl = document.querySelector("#answer");
-// var initialEl = document.querySelector("#initials");
+var initialEl = document.querySelector("#initials");
 var highScoreEl = document.querySelector("#highscore");
-// var scoreEl = document.querySelector("#score")
-var headerEl = document.querySelector("a")
+var scoreEl = document.querySelector("#score");
+var headerEl = document.querySelector("a");
 // var backBtn = document.querySelector("#back-btn");
 // var clearBtn = document.querySelector("#clear-btn");
 
@@ -96,7 +96,7 @@ function nextQuestion(event) {
         //this statement will hide the questions and display the score page.
         else {
             questionsEl.classList.add("hide");
-            highScoreEl.removeAttribute("class");
+            initialEl.removeAttribute("class");
             clearInterval(setIntervalId);
             scoreEl.textContent = timerEl.textContent;
         }
