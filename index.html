@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- this is my starter code for the quiz -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,101 +18,54 @@
 
     <!-- Main will hold each quiz page -->
     <main>
-        <!-- Welcome page with instructions -->
-        <section id="welcome">
+        <!---- Static page with instructions ----->
+        <section id="intro-section">
             <h1>Coding Quiz Challenge</h1>
 
-            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds.</p>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                answers will penalize your score/time by 10 seconds.</p>
 
             <button id="start-btn">Start Quiz
             </button>
         </section>
 
-        <!-- This page is question 1 -->
-        <section id="questions">
-            <h2 class="title">Question 1</h2>
+        <!------ Question Container ------>
+        <section id="questions" class="hide">
+            <h2 id="title">Question 1</h2>
             <ul>
-                <li><button class="choice">Answer 1</button></li>
-                <li><button class="choice">Answer 2</button></li>
-                <li><button class="choice">Answer 3</button></li>
-                <li><button class="choice">Answer 4</button></li>
-            </ul>
-        </section>
-        
-        <!-- This page is question 2 -->
-        <section id="questions">
-            <h2 class="title">Question 2</h2>
-
-            <ul>
-                <li><button class="choice">Answer 1</button></li>
-                <li><button class="choice">Answer 2</button></li>
-                <li><button class="choice">Answer 3</button></li>
-                <li><button class="choice">Answer 4</button></li>
+                <li><button class="choices">Answer 1</button></li>
+                <li><button class="choices">Answer 2</button></li>
+                <li><button class="choices">Answer 3</button></li>
+                <li><button class="choices">Answer 4</button></li>
             </ul>
         </section>
 
-        <!-- This page is question 3 -->
-        <section id="questions">
-            <h2 class="title">Question 3</h2>
-
-            <ul>
-                <li><button class="choice">Answer 1</button></li>
-                <li><button class="choice">Answer 2</button></li>
-                <li><button class="choice">Answer 3</button></li>
-                <li><button class="choice">Answer 4</button></li>
-            </ul>
-        </section>
-
-        <!-- This page is question 4 -->
-        <section id="questions">
-            <h2 class="title">Question 4</h2>
-
-            <ul>
-                <li><button class="choice">Answer 1</button></li>
-                <li><button class="choice">Answer 2</button></li>
-                <li><button class="choice">Answer 3</button></li>
-                <li><button class="choice">Answer 4</button></li>
-            </ul>
-        </section>
-
-        <!-- This page is question 5 -->
-        <section id="questions">
-            <h2 class="title">Question 5</h2>
-
-            <ul>
-                <li><button class="choice">Answer 1</button></li>
-                <li><button class="choice">Answer 2</button></li>
-                <li><button class="choice">Answer 3</button></li>
-                <li><button class="choice">Answer 4</button></li>
-            </ul>
-        </section>
-
-        <!-- This page will save the user's quiz score -->
-        <section id="initials">
-            <h2 class="title">Quiz Completed!</h2>
-            <p>Your score is <label for="" id="score"></label>00</p>
+        <!-- Display page for current User's quiz score -->
+        <section id="initials" class="hide">
+            <h2>Quiz Completed!</h2>
+            <p>Your score is <label for="" id="score"></label>0</p>
 
             Enter Initials: <input type="text" id="initial-input">
             <button id="submit">Submit</button>
         </section>
 
         <!-- This page will list all user high scores -->
-        <section id="highscore">
-            <h2 class="title">View High Scores</h2>
+        <section id="highscore" class="hide">
+            <h2>View High Scores</h2>
             <ol>
-               <!-- DYNAMIC -->
-                <li></li> 
+                <!-- DYNAMIC -->
+                <li></li>
             </ol>
 
             <ul>
-                <button>Go Back</button>
-                <button>Clear High Scores</button>
+                <button id="back-btn">Go Back</button>
+                <button id="clear-btn">Clear High Scores</button>
             </ul>
-        
+
         </section>
     </main>
 
-    <!-- JS is linked here -->
+    <!------ JS is linked here ------>
     <script src="./Assets/JS/script.js"></script>
 </body>
 
