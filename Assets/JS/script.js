@@ -9,7 +9,7 @@ var initialEl = document.querySelector("#initials");
 var highScoreEl = document.querySelector("#highscore");
 var scoreEl = document.querySelector("#score");
 var headerEl = document.querySelector("a");
-// var backBtn = document.querySelector("#back-btn");
+var backBtn = document.querySelector("#back-btn");
 // var clearBtn = document.querySelector("#clear-btn");
 
 // data structure to store questions and choices
@@ -108,6 +108,10 @@ function viewHighScore() {
     highScoreEl.removeAttribute("class");
 }
 
+function goBack() {
+    highScoreEl.classList.add("hide");
+    welcomeEl.removeAttribute("class");
+}
 
 
 
@@ -115,3 +119,4 @@ function viewHighScore() {
 startBtn.addEventListener("click", startQuiz);
 questionsEl.addEventListener("click", nextQuestion);
 headerEl.addEventListener("click", viewHighScore);
+backBtn.addEventListener("click", goBack)
