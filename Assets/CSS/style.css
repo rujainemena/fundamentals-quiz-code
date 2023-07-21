@@ -1,3 +1,7 @@
+* {
+    background-color: #f6f3ee;
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -14,8 +18,8 @@ header p {
 }
 
 button{
-    color: white;
-    background-color: purple;
+    color: black;
+    background-color: #C4A092;
     align-items: baseline;
 }
 
