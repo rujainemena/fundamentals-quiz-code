@@ -1,14 +1,20 @@
 * {
     background-color: #f6f3ee;
+    color: #3D2F2B;
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
+    font-weight: bold;
 }
 
 header a {
     width: 50%;
+}
+
+a:hover{
+    color: #C4A092;
 }
 
 header p {
@@ -20,7 +26,6 @@ header p {
 button{
     color: black;
     background-color: #C4A092;
-    align-items: baseline;
 }
 
 .hide {

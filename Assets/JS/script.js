@@ -10,6 +10,7 @@ var highScoreEl = document.querySelector("#highscore");
 var scoreEl = document.querySelector("#score");
 var headerEl = document.querySelector("a");
 var backBtn = document.querySelector("#back-btn");
+var submitBtn = document.querySelector("#submit");
 // var clearBtn = document.querySelector("#clear-btn");
 
 // data structure to store questions and choices
@@ -101,6 +102,7 @@ function nextQuestion(event) {
     }
 }
 
+// function to review all high scores using header link.
 function viewHighScore() {
     welcomeEl.classList.add("hide");
     questionsEl.classList.add("hide");
@@ -108,6 +110,7 @@ function viewHighScore() {
     highScoreEl.removeAttribute("class");
 }
 
+// Function to return to the homepage from the Highscore page.
 function goBack() {
     highScoreEl.classList.add("hide");
     welcomeEl.removeAttribute("class");
@@ -120,3 +123,4 @@ startBtn.addEventListener("click", startQuiz);
 questionsEl.addEventListener("click", nextQuestion);
 headerEl.addEventListener("click", viewHighScore);
 backBtn.addEventListener("click", goBack)
+
