@@ -102,8 +102,9 @@ function nextQuestion(event) {
 }
 
 function viewHighScore() {
-    welcomeEl.classList.add("hide")
+    welcomeEl.classList.add("hide");
     questionsEl.classList.add("hide");
+    initialEl.classList.add("hide");
     highScoreEl.removeAttribute("class");
 }
 

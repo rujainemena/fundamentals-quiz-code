@@ -16,6 +16,7 @@ header p {
 button{
     color: white;
     background-color: purple;
+    align-items: baseline;
 }
 
 .hide {
