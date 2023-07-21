@@ -12,8 +12,6 @@ var headerEl = document.querySelector("a");
 // var backBtn = document.querySelector("#back-btn");
 // var clearBtn = document.querySelector("#clear-btn");
 
-
-
 // data structure to store questions and choices
 var questionIndex = 0;
 var questionGroup = [
@@ -108,6 +106,8 @@ function viewHighScore() {
     questionsEl.classList.add("hide");
     highScoreEl.removeAttribute("class");
 }
+
+
 
 
 // User actions

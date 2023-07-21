@@ -13,6 +13,11 @@ header p {
     justify-content: end;
 }
 
+button{
+    color: white;
+    background-color: purple;
+}
+
 .hide {
     display: none;
 }
